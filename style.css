@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 20px; /* Espaciado interno */
+    flex-basis: 100%;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex; /* Utiliza un diseño de caja flexible para alinear elementos horizontalmente */
+}
+
+/* Estilo para el logotipo */
+
+.logo {
+    display: flex;
+    flex-basis: 20%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.logo a img{
+    max-width: 150px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
+    height: auto;
+}
+
+/* Estilo para la barra de navegación */
+
+.menu{
+    flex-basis: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none; 
+    margin: 0 20px; /* Espaciado entre elementos de navegación */
+    color: #fff; 
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+/* Estilo para los botones */
+
+.seccion_uno {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+}
+
+.mapa_espania {
+    width: 40%; /* Ajusta el ancho del mapa */
+    height: 300px; 
+}
+
+
+.mapa_espania svg {
+    width: 100%;
+    height: 100%;
+}
+
+.mapa_espania path {
+    fill: #e0e0e0;
+    stroke: #000;
+    stroke-width: 1;
+}
+
+.mapa_espania path:hover {
+    fill: yellow;
+}
+  
+
+/* Articulos */
+
+section .titulo{
+    width: 100%;
+    text-align: center;
+}
+
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+    font-size: 50px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+article{
+    margin: 0.5%;
+    flex-basis: 32%;
+}
+
+article > img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo, .descripcion{
+    text-align: start;
+    padding: 3px;
+}
+
+article:hover{
+    box-shadow: 0px 0px 5px gray;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+}
+
+/* Estlilos para footer */
+
+footer {
+    background-color: gray; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px; /* Espaciado interno */
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.containerfoo{
+    display: flex; /* Utiliza un diseño de caja flexible para alinear elementos horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foInformacion{
+    flex-basis: 30%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.foInformacion p a img{
+    max-width: 25px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
+    height: auto;
+}
