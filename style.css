@@ -10,6 +10,12 @@ header {
     flex-basis: 100%;
 }
 
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 166, 255);
+    font-size: 50px;
+}
+
 /* Estilo para el contenedor principal */
 .container {
     display: flex; /* Utiliza un diseño de caja flexible para alinear elementos horizontalmente */
@@ -33,9 +39,10 @@ header {
 /* Estilo para la barra de navegación */
 
 .menu{
+    display: flex;
     flex-basis: 40%;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -77,6 +84,21 @@ header {
     color: rgb(0, 179, 255);
 }
 
+/* ######################### SECCION GENERAL ######################### */
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/* ######################### SECCION 1 ######################### */
+
 /* mapa */
 
 .mapa_espania {
@@ -105,29 +127,57 @@ header {
     fill: yellow;
 }
 
+/* ######################### SECCION 2 ######################### */
+
+/* buscador */
+
+.contenedor {
+    flex-basis: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center; /* Alinea verticalmente los elementos */
+    align-items: center; /* Alinea horizontalmente los elementos */
+}
+
+.box-buscar{
+    margin: 0;
+    width: 50%;
+}
+
+.box-buscar input {
+    height: 25px;
+    width: 100%;
+}
+
+.box-boton button{
+    width: 180%;
+    height: 30.5px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+.box-boton button:hover{
+    background-color: rgb(0, 179, 255);
+}
+
+/* ######################### SECCION 3 ######################### */
+
 /* Articulos */
 
-section .titulo{
-    width: 100%;
+.sectionExperencia .titulo{
+    flex-basis: 100%;
     text-align: center;
 }
 
-h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: blue;
-    font-size: 50px;
+.sectionExperencia{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
 }
 
-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
+/* antes */
 
 article{
     margin: 0.5%;
@@ -142,7 +192,7 @@ article > img{
     justify-content: center;
 }
 
-.titulo, .descripcion{
+.titulo_pro, .descripcion{
     text-align: start;
     padding: 3px;
 }
