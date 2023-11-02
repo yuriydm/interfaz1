@@ -50,26 +50,53 @@ header {
 
 /* Estilo para los botones */
 
-.seccion_uno {
+.buttons{
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    
+    flex-basis: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
+.buttons button {
+    align-items: flex-end;
+    background-color: blue; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Cambia el color del botón al pasar el mouse sobre él */
+.buttons button:hover {
+    background-color: rgb(0, 179, 255); 
+}
+
+.menu a:hover {
+    color: rgb(0, 179, 255);
+}
+
+/* mapa */
+
 .mapa_espania {
-    width: 40%; /* Ajusta el ancho del mapa */
-    height: 300px; 
+    flex-basis: 70%; /* Ajusta el ancho del mapa */
+    height: 300px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
 .mapa_espania svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 .mapa_espania path {
-    fill: #e0e0e0;
+    fill: whitesmoke;
     stroke: #000;
     stroke-width: 1;
 }
@@ -77,7 +104,6 @@ header {
 .mapa_espania path:hover {
     fill: yellow;
 }
-  
 
 /* Articulos */
 
@@ -139,6 +165,17 @@ footer {
     padding: 10px; /* Espaciado interno */
     flex-basis: 100%;
     max-width: 100%;
+}
+
+.logofo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.logofo a img{
+    max-width: 150px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
+    height: auto;
 }
 
 .containerfoo{
