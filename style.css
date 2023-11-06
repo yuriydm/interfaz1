@@ -107,13 +107,13 @@ section {
 svg {
     padding-top: 5%;
     width: 100%;
-    min-width: 355px;
     overflow: visible;
 }
 
 .mapa_espania {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-basis: 100%;
 }
 
 .mapa_espania path {
