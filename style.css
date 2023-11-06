@@ -1,16 +1,23 @@
-body{
+/* Estilos generales */
+body {
     margin: 0;
     padding: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 header {
     background-color: gray; /* Color de fondo */
     color: #fff; /* Color de texto */
-    padding: 20px; /* Espaciado interno */
     flex-basis: 100%;
+    padding: 1%;
 }
 
-h2{
+h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(0, 166, 255);
     font-size: 50px;
@@ -22,62 +29,60 @@ h2{
 }
 
 /* Estilo para el logotipo */
-
 .logo {
     display: flex;
-    flex-basis: 20%;
+    flex-basis: 15%;
     align-items: flex-end;
     justify-content: flex-end;
     margin: 0 auto;
 }
 
-.logo a img{
+.logo a img {
     max-width: 150px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
     height: auto;
 }
 
 /* Estilo para la barra de navegación */
-
-.menu{
+.menu {
     display: flex;
     flex-basis: 40%;
     justify-content: flex-start;
     align-items: center;
+    background-color: gray;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .menu a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none; 
-    margin: 0 20px; /* Espaciado entre elementos de navegación */
-    color: #fff; 
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    text-decoration: none;
+    margin: 0 20px;
+    color: #fff;
+    justify-content: space-between;
 }
 
 /* Estilo para los botones */
-
-.buttons{
+.buttons {
     display: flex;
-    flex-basis: 40%;
+    flex-basis: 30%;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
 .buttons button {
     align-items: flex-end;
-    background-color: blue; 
-    color: #fff; 
-    border: none; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
     margin: 5px;
 }
 
 /* Cambia el color del botón al pasar el mouse sobre él */
 .buttons button:hover {
-    background-color: rgb(0, 179, 255); 
+    background-color: rgb(0, 179, 255);
 }
 
 .menu a:hover {
@@ -85,8 +90,7 @@ h2{
 }
 
 /* ######################### SECCION GENERAL ######################### */
-
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -100,21 +104,16 @@ section{
 /* ######################### SECCION 1 ######################### */
 
 /* mapa */
-
-.mapa_espania {
-    flex-basis: 70%; /* Ajusta el ancho del mapa */
-    height: 300px;
-    margin-left: 15%;
-    margin-right: 15%;
+svg {
+    padding-top: 5%;
+    width: 100%;
+    min-width: 355px;
+    overflow: visible;
 }
 
-
-.mapa_espania svg {
+.mapa_espania {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    justify-content: flex-start;
 }
 
 .mapa_espania path {
@@ -130,7 +129,6 @@ section{
 /* ######################### SECCION 2 ######################### */
 
 /* buscador */
-
 .contenedor {
     flex-basis: 70%;
     margin-left: 15%;
@@ -140,7 +138,7 @@ section{
     align-items: center; /* Alinea horizontalmente los elementos */
 }
 
-.box-buscar{
+.box-buscar {
     margin: 0;
     width: 50%;
 }
@@ -150,7 +148,7 @@ section{
     width: 100%;
 }
 
-.box-boton button{
+.box-boton button {
     width: 180%;
     height: 30.5px;
     border-radius: 0px 5px 5px 0px;
@@ -158,33 +156,57 @@ section{
     color: whitesmoke;
 }
 
-.box-boton button:hover{
+.box-boton button:hover {
     background-color: rgb(0, 179, 255);
 }
 
 /* ######################### SECCION 3 ######################### */
 
 /* Articulos */
-
-.sectionExperencia .titulo{
+.sectionExperencia .titulo {
     flex-basis: 100%;
     text-align: center;
 }
 
-.sectionExperencia{
+.sectionExperencia {
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
 }
 
-/* antes */
+.experienciacolum1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    padding-top: 50px;
+}
 
-article{
+.experienciacolum2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+}
+
+.experienciacolum {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    padding-top: 100px;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    border: 15px solid black;
+}
+
+/* antes */
+article {
     margin: 0.5%;
     flex-basis: 32%;
 }
 
-article > img{
+article > img {
     width: 100%;
     height: auto;
     display: flex;
@@ -192,43 +214,35 @@ article > img{
     justify-content: center;
 }
 
-.titulo_pro, .descripcion{
+.titulo_pro,
+.descripcion {
     text-align: start;
     padding: 3px;
 }
 
-article:hover{
+article:hover {
     box-shadow: 0px 0px 5px gray;
 }
 
-@media screen and (max-width: 600px) {
-    main{
-        flex-direction: column;
-    }
-}
-
 /* Estlilos para footer */
-
 footer {
     background-color: gray; /* Color de fondo */
     color: #fff; /* Color de texto */
-    padding: 10px; /* Espaciado interno */
-    flex-basis: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
-.logofo{
+.logofo {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.logofo a img{
+.logofo a img {
     max-width: 150px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
     height: auto;
 }
 
-.containerfoo{
+.containerfoo {
     display: flex; /* Utiliza un diseño de caja flexible para alinear elementos horizontalmente */
     justify-content: space-between; /* Distribuye el espacio entre los elementos */
     align-items: center; /* Alinea los elementos verticalmente */
@@ -236,13 +250,99 @@ footer {
     margin: 0 auto;
 }
 
-.foInformacion{
+.foInformacion {
     flex-basis: 30%;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
-.foInformacion p a img{
+.foInformacion p a img {
     max-width: 25px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
     height: auto;
+}
+
+/* ############################ METODOS RESPONSIVE ############################ */
+
+/* Estilos para tamaños de pantalla más grandes, como escritorio */
+@media screen and (min-width: 769px) {
+    /* Mostrar la barra de navegación normal */
+    .menu {
+        display: flex;
+    }
+
+    /* Ocultar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
+    .logo::before, .buttons::before {
+        display: none;
+    }
+
+    /* Estilos para la versión de escritorio */
+    article{
+        flex-basis: 32%; /* Puedes ajustar esto según tus necesidades */
+    }
+}
+
+/* Estilos para tamaños de pantalla medianos, como tablet */
+@media screen and (max-width: 768px) {
+    /* Ocultar el menú de navegación */
+    .menu {
+        display: none;
+    }
+
+    /* Mostrar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
+    .logo::before {
+        content: "\2630";
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .buttons button {
+        display: none;
+    }
+
+    .buttons::before {
+        content: "\1F464";
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Estilos para la versión Tablet */
+    .sectionExperencia .experienciacolum1,
+    .sectionExperencia .experienciacolum2 {
+        flex-basis: 48%; /* Mostrar 2 columnas en lugar de 3 */
+    }
+}
+
+/* Estilos para tamaños de pantalla más pequeños, como móvil */
+@media screen and (max-width: 600px) {
+    /* Estilos adicionales para la versión Móvil */
+
+    /* Ocultar el menú de navegación y los botones en la cabecera */
+    .menu, .buttons {
+        display: none;
+    }
+
+    /* Mostrar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
+    .logo::before {
+        content: "\2630";
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .buttons button {
+        display: none;
+    }
+
+    .buttons::before {
+        content: "\1F464";
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Estilos para la versión Móvil */
+    .sectionExperencia .experienciacolum1,
+    .sectionExperencia .experienciacolum2 {
+        flex-basis: 100%; /* Mostrar 1 columna en lugar de 3 */
+    }
 }
