@@ -209,6 +209,11 @@ h2 .mapa{
     padding-top: 100px;
 }
 
+.sectionExperencia .experienciacolum1 a, .sectionExperencia .experienciacolum2 a, .sectionExperencia .experienciacolum3 a {
+    text-decoration: none;
+    color: black;
+}
+
 .expe{
     display: flex;
     flex-direction: column;
@@ -229,7 +234,26 @@ h2 .mapa{
     justify-content: center;
 }
 
-.titulo_pro, .descripcion {
+.datos-productos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.titulo_pro{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    padding: 3px;
+}
+
+.descripcion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     text-align: start;
     padding: 3px;
 }
@@ -319,15 +343,21 @@ footer {
         font-size: 30px;
         cursor: pointer;
     }
+    
 
     /* Estilos para la versión Tablet */
     .sectionExperencia .experienciacolum1,
-    .sectionExperencia .experienciacolum2 {
-        flex-basis: 50%; /* Mostrar 2 columnas en lugar de 3 */
-    }
-    .sectionExperencia .experienciacolum1{
-        flex-basis: 50%;
+    .sectionExperencia .experienciacolum3 {
+        flex-basis: 45%;
         padding-top: 0;
+    }
+
+    .sectionExperencia .experienciacolum2{
+        flex-basis: 95%;
+        order: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }
 
@@ -357,13 +387,14 @@ footer {
 
     /* Estilos para la versión Tablet */
     .sectionExperencia .experienciacolum1,
-    .sectionExperencia .experienciacolum2,
     .sectionExperencia .experienciacolum3 {
-        flex-basis: 100%; /* Mostrar 2 columnas en lugar de 3 */
+        flex-basis: 100%; 
     }
-    .sectionExperencia .experienciacolum3{
-        padding-top: 0;
+
+    .sectionExperencia .experienciacolum2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
     }
+    
 }
-
-
