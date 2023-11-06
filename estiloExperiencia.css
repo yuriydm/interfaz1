@@ -1,0 +1,195 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 250px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+header {
+    background-color: gray; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    flex-basis: 100%;
+    padding: 1%;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 166, 255);
+    font-size: 50px;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex; /* Utiliza un diseño de caja flexible para alinear elementos horizontalmente */
+}
+
+/* Estilo para el logotipo */
+.logo {
+    display: flex;
+    flex-basis: 15%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.logo a img {
+    max-width: 150px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
+    height: auto;
+}
+
+/* Estilo para la barra de navegación */
+.menu {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gray;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0 20px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+/* Estilo para los botones */
+.buttons {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.buttons button {
+    align-items: flex-end;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Cambia el color del botón al pasar el mouse sobre él */
+.buttons button:hover {
+    background-color: rgb(0, 179, 255);
+}
+
+.menu a:hover {
+    color: rgb(0, 179, 255);
+}
+
+
+/* Estilos para los contenedores de fondo */
+.contenedorFondo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contenedorFondo div {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  /* Estilos para las imágenes en el contenedor de fondo */
+  .imgexperiencia {
+    width: 100%;
+    height: auto;
+  }
+  
+/* Estilos para la primera sección */
+.seccion1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
+  }
+  
+  .imgexperiencia {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contenido1 {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto;
+  }
+  
+  /* Estilos para la segunda sección */
+  .seccion2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+  }
+  
+  .seccion2 div {
+    width: 20%; /* 5 columnas en total */
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para las imágenes en la segunda sección */
+  .seccion2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos para los videos en la segunda sección */
+  .seccion2 video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+/* Estlilos para footer */
+footer {
+    background-color: gray; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    width: 100%;
+}
+
+.logofo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.logofo a img {
+    max-width: 150px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
+    height: auto;
+}
+
+.containerfoo {
+    display: flex; /* Utiliza un diseño de caja flexible para alinear elementos horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foInformacion {
+    flex-basis: 30%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.foInformacion p a img {
+    max-width: 25px; /* Tamaño máximo del logotipo DEPENDE DE QUE LOGO SE PONGA HAY QUE PONER HEIGHT */
+    height: auto;
+}
