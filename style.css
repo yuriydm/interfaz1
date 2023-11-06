@@ -105,6 +105,7 @@ section {
 /* ######################### SECCION 1 ######################### */
 
 /* mapa */
+
 svg {
     padding-top: 5%;
     width: 100%;
@@ -309,7 +310,11 @@ footer {
     }
 
     /* Ocultar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
-    .logo::before, .buttons::before {
+    .nav-oculto::before, .buttons::before {
+        display: none;
+    }
+
+    .nav-oculto {
         display: none;
     }
 
@@ -326,13 +331,16 @@ footer {
         display: none;
     }
 
-    /* Mostrar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
-    .logo::before {
-        content: "\2630";
-        font-size: 30px;
-        cursor: pointer;
-        margin-right: 20px;
+    .nav-oculto {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 15%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-decoration: none;
     }
+
+    /* Mostrar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
 
     .buttons button {
         display: none;
@@ -343,7 +351,6 @@ footer {
         font-size: 30px;
         cursor: pointer;
     }
-    
 
     /* Estilos para la versión Tablet */
     .sectionExperencia .experienciacolum1,
@@ -368,13 +375,6 @@ footer {
     }
 
     /* Mostrar el icono de menú (bocadillo) y el icono de usuario en la cabecera */
-    .logo::before {
-        content: "\2630";
-        font-size: 30px;
-        cursor: pointer;
-        margin-right: 20px;
-    }
-
     .buttons button {
         display: none;
     }
@@ -398,3 +398,40 @@ footer {
     }
     
 }
+
+/* ############################# nav responsive ############################# */
+
+
+.nav-oculto details > summary {
+    cursor: pointer;
+    content: "\1F464";
+}
+
+.hammenu{
+    height: 25%;
+    width: 25%;
+    pointer-events: none;
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+details > ul > li{
+    list-style: none;
+}
+
+details > ul > li > a{
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.boton-ocul button{
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
